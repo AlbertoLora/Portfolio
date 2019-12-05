@@ -1,0 +1,85 @@
+/* este diseño no es responsive */
+body{
+    background-color: black;
+}
+a#menu{
+    color: white;
+}
+#wrapper{/*El wrapper se mueve para centrarse*/
+    position: relative;
+    background-image: url("../img/halloween.jpg");
+    margin: auto;
+    width: 1344px;
+    height: 756px;
+    border-radius: 150px;
+    box-shadow: orange 20px 20px 20px,
+                orange -20px -20px 20px,
+                orange 20px -20px 20px,
+                orange -20px 20px 20px;
+    font-family: 'Creepster', cursive;
+}
+nav {
+    padding: 25px 20px 0 0;
+}
+
+nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #fbff00;
+    border: solid 2px yellow;
+}
+h1 {/*Lo que va dentro del wrapper se mueve con el*/
+    position: absolute;
+    text-align: center;
+    left: 400px;
+    font-size: 400%;
+    color: orange;
+
+}
+#p1 {
+    position: absolute;
+    color: white;
+    top: 400px;
+    left: 550px;
+    font-size: 300%;
+}
+#pumpkin {
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    top: 300px;
+    left: 73px;
+}
+#tittle{
+    position: absolute;
+    width: 580px;
+    height: 100px;
+    top: 35px;
+    left: 390px;
+}
+#zombie {
+    visibility: hidden;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+#murcielago {
+    visibility: hidden;
+    position: absolute;
+    top: 150px;
+    left: 330px;
+}
+#murcielago2 {
+    visibility: hidden;
+    position: absolute;
+    top: 150px;
+    left: 850px;
+}

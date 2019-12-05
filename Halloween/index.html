@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+    <script>
+        function mostrar(id){
+            document.getElementById(id).style.visibility="visible";
+        }
+        function ocultar(id){
+            document.getElementById(id).style.visibility="hidden";
+        }
+        function sonar(id){
+            document.getElementById(id).play();
+        }
+        function callar(id){
+            document.getElementById(id).pause();
+        }
+    </script>
+</head>
+<body>
+
+    <audio id="1" src="sonidos/SCREAM3.mp3" type="audio/mpeg"></audio>
+    <audio id="2" src="sonidos/sono_moo.mp3" type="audio/mpeg"></audio>
+
+    <header>
+            <div class="navegador">
+                <nav>
+                    <a href="" id="menu-icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="current">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Halloween</a>
+                        </li>
+                        <li>
+                            <a href="../Otoño/otono.html">Otoño</a>
+                        </li>
+                        <li>
+                            <a href="../Lluvia/index.html">Lluvia</a>
+                        </li>
+                        <li>
+                            <a href="../Cocina/index.html">Receta</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <div id="wrapper">
+        <h1>Scary Halloween Party</h1>
+        <p id="p1">Don´t disturb the pumpkin!!!...</p>
+        <div id="pumpkin" onmouseover="mostrar('zombie');sonar('1')" onmouseout="ocultar('zombie');callar('1')"></div>
+        <div id="tittle" onclick="mostrar('murcielago');mostrar('murcielago2');sonar('2')"></div>
+        <img id="zombie" src="img/alien2.gif" alt="">
+        <img src="img/murcielago.gif" onclick="ocultar('murcielago')" id="murcielago">
+        <img src="img/murcielago.gif" onclick="ocultar('murcielago2')" id="murcielago2">
+    </div>
+</body>
+</html>

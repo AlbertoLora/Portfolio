@@ -1,0 +1,71 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: repeat;
+    padding: 0px;
+}
+.wrapper{
+    border: solid 1px black;
+    background-color: white;
+    margin: auto;
+    height: 500px;
+    overflow: auto;
+    width: 80%;
+    padding: 1vw;
+    box-shadow: black 20px 20px 20px;
+}
+h1{
+    color: orangered;
+    text-align: center;
+}
+ul{
+    list-style-type: square;
+    text-align: center;
+}
+li{
+    margin: 8px;
+}
+h2{
+    text-align: center;
+    color: chocolate;
+    margin-top: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: solid 1px orangered;
+}
+a:hover{
+    background-color: orangered;
+}
+dt{
+    font-weight: bold;
+    color: red;
+}
+table{
+    border: 2px solid red;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+tr:hover{
+    background-color: rgba(128, 128, 128, 0.671);
+}
+iframe{
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    border: 2px solid red;
+}
+/* Vamos a utilizar un recurso llamado media query 
+se trata de incluir una especie de if y una condicion
+para que cambie algo en el estilo cuando tengo una pantalla pequeña */
+
+@media only screen and(max-width:500px){
+    .wrapper {
+        width: 100%;
+    }
+}
